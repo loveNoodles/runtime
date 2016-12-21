@@ -13,6 +13,7 @@
 		F1C1F3ED1E0A84E500BBE218 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1C1F3EB1E0A84E500BBE218 /* Main.storyboard */; };
 		F1C1F3EF1E0A84E500BBE218 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1C1F3EE1E0A84E500BBE218 /* Assets.xcassets */; };
 		F1C1F3F21E0A84E500BBE218 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1C1F3F01E0A84E500BBE218 /* LaunchScreen.storyboard */; };
+		F1C1F3FB1E0A856B00BBE218 /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C1F3FA1E0A856B00BBE218 /* MyClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		F1C1F3EE1E0A84E500BBE218 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1C1F3F11E0A84E500BBE218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1C1F3F31E0A84E500BBE218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1C1F3F91E0A856B00BBE218 /* MyClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClass.h; sourceTree = "<group>"; };
+		F1C1F3FA1E0A856B00BBE218 /* MyClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				F1C1F3E61E0A84E500BBE218 /* AppDelegate.m */,
 				F1C1F3E81E0A84E500BBE218 /* ViewController.h */,
 				F1C1F3E91E0A84E500BBE218 /* ViewController.m */,
+				F1C1F3F91E0A856B00BBE218 /* MyClass.h */,
+				F1C1F3FA1E0A856B00BBE218 /* MyClass.m */,
 				F1C1F3EB1E0A84E500BBE218 /* Main.storyboard */,
 				F1C1F3EE1E0A84E500BBE218 /* Assets.xcassets */,
 				F1C1F3F01E0A84E500BBE218 /* LaunchScreen.storyboard */,
@@ -150,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1C1F3FB1E0A856B00BBE218 /* MyClass.m in Sources */,
 				F1C1F3EA1E0A84E500BBE218 /* ViewController.m in Sources */,
 				F1C1F3E71E0A84E500BBE218 /* AppDelegate.m in Sources */,
 				F1C1F3E41E0A84E500BBE218 /* main.m in Sources */,
@@ -270,6 +276,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				INFOPLIST_FILE = RuntimeSyntaxDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BBAE.RuntimeSyntaxDemo;
@@ -281,6 +288,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				INFOPLIST_FILE = RuntimeSyntaxDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BBAE.RuntimeSyntaxDemo;
@@ -307,6 +315,7 @@
 				F1C1F3F81E0A84E500BBE218 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
