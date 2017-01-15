@@ -14,6 +14,7 @@
 		F1C1F3EF1E0A84E500BBE218 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1C1F3EE1E0A84E500BBE218 /* Assets.xcassets */; };
 		F1C1F3F21E0A84E500BBE218 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1C1F3F01E0A84E500BBE218 /* LaunchScreen.storyboard */; };
 		F1C1F3FB1E0A856B00BBE218 /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C1F3FA1E0A856B00BBE218 /* MyClass.m */; };
+		F1C8E9251E2B223700709147 /* UIViewController+trace.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C8E9241E2B223700709147 /* UIViewController+trace.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		F1C1F3F31E0A84E500BBE218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1C1F3F91E0A856B00BBE218 /* MyClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClass.h; sourceTree = "<group>"; };
 		F1C1F3FA1E0A856B00BBE218 /* MyClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClass.m; sourceTree = "<group>"; };
+		F1C8E9231E2B223700709147 /* UIViewController+trace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+trace.h"; sourceTree = "<group>"; };
+		F1C8E9241E2B223700709147 /* UIViewController+trace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+trace.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,8 @@
 				F1C1F3E61E0A84E500BBE218 /* AppDelegate.m */,
 				F1C1F3E81E0A84E500BBE218 /* ViewController.h */,
 				F1C1F3E91E0A84E500BBE218 /* ViewController.m */,
+				F1C8E9231E2B223700709147 /* UIViewController+trace.h */,
+				F1C8E9241E2B223700709147 /* UIViewController+trace.m */,
 				F1C1F3F91E0A856B00BBE218 /* MyClass.h */,
 				F1C1F3FA1E0A856B00BBE218 /* MyClass.m */,
 				F1C1F3EB1E0A84E500BBE218 /* Main.storyboard */,
@@ -156,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1C1F3FB1E0A856B00BBE218 /* MyClass.m in Sources */,
+				F1C8E9251E2B223700709147 /* UIViewController+trace.m in Sources */,
 				F1C1F3EA1E0A84E500BBE218 /* ViewController.m in Sources */,
 				F1C1F3E71E0A84E500BBE218 /* AppDelegate.m in Sources */,
 				F1C1F3E41E0A84E500BBE218 /* main.m in Sources */,

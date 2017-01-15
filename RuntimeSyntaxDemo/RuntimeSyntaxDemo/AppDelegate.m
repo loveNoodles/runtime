@@ -10,7 +10,6 @@
 #import <objc/message.h>
 #import "MyClass.h"
 
-
 @interface AppDelegate ()
 
 @end
@@ -51,7 +50,8 @@ void imp_submethod1(id self, SEL _cmd) {
     /////////////////// 第一个栗子
     // 这个例子是在运行时创建了一个NSError的子类TestClass，然后为这个子类添加一个方法testMetaClass，这个方法的实现是TestMetaClass函数。
     Class newClass = objc_allocateClassPair([NSError class], "TTestClass", 0);      // 创建一个新的对象TTestClass
-    class_addMethod(newClass, @selector(testMetaClass), (IMP)TestMetaClass, "v@:"); // 向TTestClass添加一个方法testMetaClass,并由TestMetaClass函数实现
+    BOOL didAdd = class_addMethod(newClass, @selector(testMetaClass), (IMP)TestMetaClass, "v@:"); // 向TTestClass添加一个方法testMetaClass,并由TestMetaClass函数实现
+    NSLog(@"%d", didAdd);
     objc_registerClassPair(newClass);
     
     id instance = [[newClass alloc] initWithDomain:@"some domain" code:0 userInfo:nil];
@@ -186,9 +186,31 @@ void imp_submethod1(id self, SEL _cmd) {
         }
         free(classes);
     }
-
     
+    
+    ///////////////////////////// 分割线 /////////////////////////////
+    
+    /////////////////// SEL
+    SEL selector1 = @selector(method1);
+    NSLog(@"selector1 : %p", selector1);
+    
+    
+    IMP implentation1 = [self methodForSelector:selector1];
+    NSLog(@"implentation1 == %p", implentation1);
     return YES;
+}
+
+- (void)method1 {
+
+}
+
+/* Here, test whether the aSelector message can be forwarded to another object and whether that object can respond to it. Return YES if it can. */
+- (BOOL)respondsToSelector:(SEL)aSelector   {
+    if ( [super respondsToSelector:aSelector] )
+        return YES;
+    else {
+        return NO;
+    }
 }
 
 

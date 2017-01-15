@@ -14,6 +14,12 @@
 
 @implementation ViewController
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    NSLog(@"我是viewController的viewWillAppear:方法。viewWillAppear:方法将会被UIViewController+trace中的swizz_viewWillAppear:方法监测到");
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
